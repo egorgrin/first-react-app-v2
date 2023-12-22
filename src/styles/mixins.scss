@@ -1,0 +1,37 @@
+/* --Breakpoints-- */
+
+$x-small: 'x-small';
+$small: 'small';
+$medium: 'medium';
+$large: 'large';
+$x-large: 'x-large';
+$xx-large: 'xx-large';
+
+@mixin screen($width) {
+  @if $width == $x-small {
+    @media (max-width: 424px) {
+      @content;
+    }
+  }
+  @else if $width == $small {
+    @media (max-width: 570px) {
+      @content;
+    }
+  } @else if $width == $medium {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $width == $large {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }@else if $width == $x-large {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  }@else if $width == $xx-large {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+}

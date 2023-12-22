@@ -1,0 +1,22 @@
+@import 'cssdrop';
+@import 'mixins';
+@import 'fonts';
+@import 'variables';
+
+/* Presets */
+
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  //color: $color-dark-headings;
+  //font-family: $font-main;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
